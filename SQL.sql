@@ -1015,23 +1015,7 @@ If Object_Id('Libros') Is Not Null
  Insert Into Libros
   Values('El Aleph','Borges','Planeta',15,Null);
  Insert Into Libros
-  Values('Martin Fierro','Jose Hernandez','Emece',22.20,200);
- Insert Into Libros
-  Values('Antologia Poetica','J.L. Borges','Planeta',Null,150);
- Insert Into Libros
-  Values('Aprenda PHP','Mario Molina','Emece',18.20,Null);
- Insert Into Libros
-  Values('Cervantes Y El Quijote','Bioy Casares- J.L. Borges','Paidos',Null,100);
- Insert Into Libros
-  Values('Manual De PHP', 'J.C. Paez', 'Siglo XXI',31.80,120);
- Insert Into Libros
-  Values('Harry Potter Y La Piedra Filosofal','J.K. Rowling',Default,45.00,90);
- Insert Into Libros
-  Values('Harry Potter Y La Camara Secreta','J.K. Rowling','Emece',Null,100);
- Insert Into Libros
-  Values('Alicia En El Pais De Las Maravillas','Lewis Carroll','Paidos',22.50,200);
- Insert Into Libros
-  Values('PHP De La A A La Z',Null,Null,Null,0);
+
 
  Select Editorial, Count(*)
   From Libros
@@ -1196,39 +1180,9 @@ If Object_Id('Visitantes') Is Not Null
  );
 
  Insert Into Empleados
-  Values ('22222222','Alberto Lopez','M','C','Sistemas');
+  Values ('1','Juan','C','C','Civil');
  Insert Into Empleados
-  Values ('23333333','Beatriz Garcia','F','C','Administracion');
- Insert Into Empleados
-  Values ('24444444','Carlos Fuentes','M','S','Administracion');
- Insert Into Empleados
-  Values ('25555555','Daniel Garcia','M','S','Sistemas');
- Insert Into Empleados
-  Values ('26666666','Ester Juarez','F','C','Sistemas');
- Insert Into Empleados
-  Values ('27777777','Fabian Torres','M','S','Sistemas');
- Insert Into Empleados
-  Values ('28888888','Gabriela Lopez','F','C','Sistemas');
- Insert Into Empleados
-  Values ('29999999','Hector Garcia','M','C','Administracion');
- Insert Into Empleados
-  Values ('30000000','Ines Torres','F','C','Administracion');
- Insert Into Empleados
-  Values ('11111111','Juan Garcia','M','V','Administracion');
- Insert Into Empleados
-  Values ('12222222','Luisa Perez','F','V','Administracion');
- Insert Into Empleados
-  Values ('31111111','Marcela Garcia','F','S','Administracion');
- Insert Into Empleados
-  Values ('32222222','Nestor Fuentes','M','C','Sistemas');
- Insert Into Empleados
-  Values ('33333333','Oscar Garcia','M','S','Sistemas');
- Insert Into Empleados
-  Values ('34444444','Patricia Juarez','F','C','Administracion');
- Insert Into Empleados
-  Values ('35555555','Roberto Torres','M','C','Sistemas');
- Insert Into Empleados
-  Values ('36666666','Susana Torres','F','C','Administracion');
+
 
  Select Sexo,Estadocivil,Seccion,
   Count(*) From Empleados
@@ -1285,23 +1239,6 @@ If Object_Id('Visitantes') Is Not Null
  Insert Into Visitantes
   Values ('Susana Molina',28,'Cordoba','Cordoba','Susanamolina@Gmail.Com',50); 
  Insert Into Visitantes
-  Values ('Marcela Mercado',36,'Carlos Paz','Cordoba',Null,20);
- Insert Into Visitantes
-  Values ('Alberto Garcia',35,'La Falda','Cordoba','Albertgomgarcia@Hotmail.Com',30); 
- Insert Into Visitantes
-  Values ('Teresa Garcia',33,'Alta Gracia','Cordoba',Null,120);
- Insert Into Visitantes
-  Values ('Roberto Perez',45,'Alta Gracia','Cordoba','Robertomarioperez@Hotmail.Com',30);
- Insert Into Visitantes
-  Values ('Marina Torres',22,'Rosario','Santa Fe','Marinatorres@Xaxamail.Com',90);
- Insert Into Visitantes
-  Values ('Julieta Gomez',24,'Rosario','Santa Fe',Null,50);
- Insert Into Visitantes
-  Values ('Roxana Lopez',20,'Alta Gracia','Cordoba',Null,200);
- Insert Into Visitantes
-  Values ('Liliana Garcia',50,'Capital Federal','Buenos Aires','Lilianagarcia@Hotmail.Com',40);
- Insert Into Visitantes
-  Values ('Juan Torres',43,'Carlos Paz','Cordoba',Null,10);
 
  Select *From Visitantes
  Compute Avg(Montocompra);
@@ -1337,31 +1274,7 @@ If Object_Id('Visitantes') Is Not Null
  Insert Into Libros
   Values('El Aleph','Borges','Planeta');
  Insert Into Libros
-  Values('Martin Fierro','Jose Hernandez','Emece');
- Insert Into Libros
-  Values('Martin Fierro','Jose Hernandez','Planeta');
- Insert Into Libros
-  Values('Antologia Poetica','Borges','Planeta');
- Insert Into Libros
-  Values('Aprenda PHP','Mario Molina','Emece');
- Insert Into Libros
-  Values('Aprenda PHP','Lopez','Emece');
- Insert Into Libros
-  Values('Manual De PHP', 'J. Paez', Null);
- Insert Into Libros
-  Values('Cervantes Y El Quijote',Null,'Paidos');
- Insert Into Libros
-  Values('Harry Potter Y La Piedra Filosofal','J.K. Rowling','Emece');
- Insert Into Libros
-  Values('Harry Potter Y La Camara Secreta','J.K. Rowling','Emece');
- Insert Into Libros
-  Values('Alicia En El Pais De Las Maravillas','Lewis Carroll','Paidos');
- Insert Into Libros
-  Values('Alicia En El Pais De Las Maravillas','Lewis Carroll','Planeta');
- Insert Into Libros
-  Values('PHP De La A A La Z',Null,Null);
- Insert Into Libros
-  Values('Uno','Richard Bach','Planeta');
+
 
  Select Distinct Autor From Libros;
 
@@ -1398,12 +1311,7 @@ If Object_Id('Libros') Is Not Null
  );
 
  Insert Into Libros Values ('Uno','Richard Bach','Planeta');
- Insert Into Libros Values ('El Aleph','Borges','Emece');
- Insert Into Libros Values ('Alicia En El Pais...','Carroll','Planeta');
- Insert Into Libros Values ('Aprenda PHP','Mario Molina','Siglo XXI');
- Insert Into Libros Values ('Java En 10 Minutos','Mario Molina','Siglo XXI');
- Insert Into Libros Values ('Java Desde Cero','Mario Molina','Emece');
- Insert Into Libros Values ('Ilusiones','Richard Bach','Planeta');
+
 
  Select Top 2 * From Libros;
 
@@ -1432,11 +1340,6 @@ If Object_Id('Vehiculos') Is Not Null
  );
 
  Insert Into Vehiculos Values('AIC124','A','8:05','12:30');
- Insert Into Vehiculos Values('CAA258','A','8:05',Null);
- Insert Into Vehiculos Values('DSE367','M','8:30','18:00');
- Insert Into Vehiculos Values('FGT458','A','9:00',Null);
- Insert Into Vehiculos Values('AIC124','A','16:00',Null);
- Insert Into Vehiculos Values('LOI587','M','18:05','19:55');
 
  Insert Into Vehiculos Values('LOI587','M','18:05',Null);
 
@@ -1462,7 +1365,6 @@ If Object_Id('Vehiculos') Is Not Null
  );
 
  Insert Into Libros (Titulo,Editorial) Values('Martin Fierro','Emece');
- Insert Into Libros (Titulo,Editorial) Values('Aprenda PHP','Emece');
 
  Exec Sp_Helpconstraint Libros;
 
@@ -1508,9 +1410,6 @@ If Object_Id('Libros') Is Not Null
  );
 
  Insert Into Libros Values ('Uno','Bach','Planeta',22,20);
- Insert Into Libros Values ('El Quijote','Cervantes','Emece',15,13);
- Insert Into Libros Values ('Aprenda PHP','Mario Molina','Siglo XXI',48,53);
- Insert Into Libros Values ('Java En 10 Minutos','Garcia','Siglo XXI',35,40);
 
  Alter Table Libros
    Add Constraint CK_Libros_Precios_Positivo
@@ -1519,7 +1418,7 @@ If Object_Id('Libros') Is Not Null
  Update Libros Set Preciomay=48
   Where Titulo='Aprenda PHP';
  
- Delete From Libros Where Titulo='Java En 10 Minutos'; 
+ Delete From Libros Where Titulo='Pascal'; 
 
  Alter Table Libros
    Add Constraint CK_Libros_Preciominmay
@@ -1542,8 +1441,7 @@ If Object_Id('Libros') Is Not Null
  );
 
  Insert Into Libros Values ('Uno','Bach','Planeta',22);
- Insert Into Libros Values ('El Quijote','Cervantes','Emece',15);
- Insert Into Libros Values ('Aprenda PHP','Mario Molina','Siglo XXI',-40);
+
 
  Alter Table Libros
  With Nocheck
@@ -1607,8 +1505,7 @@ If Object_Id('Alumnos') Is Not Null
  Add Constraint UQ_Alumnos_Documento
  Unique (Documento);
 
- Insert Into Alumnos Values('A111','Lopez','Ana','22222222');
- Insert Into Alumnos Values('A123','Garcia','Maria','23333333');
+ Insert Into Alumnos Values('C11','Alfredo','Ana','JJ');
 
  Exec Sp_Helpconstraint Alumnos;
 
@@ -1719,16 +1616,6 @@ If Object_Id('Empleados') Is Not Null
 
  Insert Into Empleados 
    Values('22222222','Ana Acosta','Contaduria','1990-10-10','1972-10-10',2,700);
- Insert Into Empleados 
-   Values('23333333','Carlos Costa','Contaduria','1990-12-10','1972-05-04',0,750);
- Insert Into Empleados 
-   Values('24444444','Daniel Duarte','Sistemas','1995-05-05','1975-10-06',1,880);
- Insert Into Empleados 
-   Values('25555555','Fabiola Fuentes','Secretaria','1998-02-25','1978-02-08',3,550);
- Insert Into Empleados 
-   Values('26666666','Gaston Garcia','Secretaria','1999-05-08','1981-01-01',3,670);
- Insert Into Empleados 
-   Values('27777777','Ines Irala','Gerencia','2000-04-10','1985-12-12',0,6000);
 
  Create Rule RG_Documento_Patron
  As @Documento Like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]';
@@ -2416,23 +2303,13 @@ If Object_Id('Libros') Is Not Null
  );
 
  Insert Into Editoriales Values('Planeta');
- Insert Into Editoriales Values('Emece');
- Insert Into Editoriales Values('Siglo XXI');
- Insert Into Editoriales Values('Plaza');
+
  
- Insert Into Autores Values ('Richard Bach');
- Insert Into Autores Values ('Borges');
- Insert Into Autores Values ('Jose Hernandez');
- Insert Into Autores Values ('Mario Molina');
- Insert Into Autores Values ('Paenza');
+ Insert Into Autores Values ('Juan');
+
  
  Insert Into Libros Values('El Aleph',2,2,20);
- Insert Into Libros Values('Martin Fierro',3,1,30);
- Insert Into Libros Values('Aprenda PHP',4,3,50);
- Insert Into Libros Values('Uno',1,1,15);
- Insert Into Libros Values('Java En 10 Minutos',0,3,45);
- Insert Into Libros Values('Matematica Estas Ahi',0,0,15);
- Insert Into Libros Values('Java De La A A La Z',4,0,50);
+
 
  Select Titulo,A.Nombre,E.Nombre,Precio
   From Autores As A
@@ -2467,20 +2344,16 @@ If Object_Id('Libros') Is Not Null
   Primary Key (Codigo)
  );
 
- Insert Into Editoriales Values('Planeta');
- Insert Into Editoriales Values('Emece');
- Insert Into Editoriales Values('Siglo XXI');
+ Insert Into Editoriales Values('Barcos');
 
- Insert Into Libros Values('El Aleph','Borges',2,20);
- Insert Into Libros Values('Martin Fierro','Jose Hernandez',1,30);
- Insert Into Libros Values('Aprenda PHP','Mario Molina',3,50);
- Insert Into Libros Values('Java En 10 Minutos',Default,3,45);
+ Insert Into Libros Values('El Marinero','Marcos',2,20);
+
 
  Update Libros Set Precio=Precio+(Precio*0.1)
   From Libros 
   Join Editoriales As E
   On Codigoeditorial=E.Codigo
-  Where Nombre='Planeta';
+  Where Nombre='Mar';
 
  Select Titulo,Autor,E.Nombre,Precio
   From Libros As L
@@ -2491,7 +2364,7 @@ If Object_Id('Libros') Is Not Null
   From Libros
   Join Editoriales
   On Codigoeditorial = Editoriales.Codigo
-  Where Editoriales.Nombre='Emece';
+  Where Editoriales.Nombre='Pascal';
 
  Select Titulo,Autor,E.Nombre,Precio
   From Libros As L
